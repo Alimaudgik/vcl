@@ -1,0 +1,178 @@
+@border-dish: 1px dashed red;
+
+@media(min-width: 1050px), (max-width: 1250px) {
+  .matches__section {
+    background: url(../img/bg-foot.png) no-repeat center 0;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    
+    font-size: 14px;
+    
+  }
+
+  .matches__wrap {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px 0 #ffffff;
+
+  }
+
+  .matches__item {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .matches__date {
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+
+    &::before,
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 150px;
+      height: 1px;
+      
+      margin: 0 10px 4px;
+      background-color: #ffffff;
+    }
+  }
+
+  .matches__games--wrap {
+    width: 50%;
+    margin: 0 auto 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .matches__game {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .matches__quo,
+  .matches__three {
+    margin-bottom: 15px;
+  }
+
+  .matches__stage {
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  .matches__cap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .matches__cap--name {
+    width: 35%;
+    font-size: 0.9rem;
+
+    &.winner {
+      font-weight: bold;
+    }
+  }
+
+  .matches__cap--res {
+    width: 25%;
+    text-align: center;
+
+    & .cap-res {
+      display: inline-block;
+      width: 35%;
+    }
+
+    & .res-win {
+      font-weight: bold;
+    }
+  }
+
+  @keyframes teamOn {
+    from {
+      height: 0;
+      color: transparent;
+    };
+    to {
+      height: 105px;
+      color: #ffffff;
+    }
+  }
+
+  @keyframes teamOff {
+    from {
+      height: 105px;
+      color: #ffffff;
+    };
+    to {
+      height: 0;
+      color: transparent;
+      display: none;
+
+    }
+  }
+
+  .matches__team--wrap {
+    position: relative;
+    justify-content: space-between;
+    overflow: hidden;
+    display: flex;
+    height: 0;
+
+    &.team-off {
+      display: none;
+    }
+    &.team-open {
+      height: 105px;
+      animation: teamOn 0.5s linear;
+    }
+    &.team-close {
+      animation: teamOff 0.5s linear;
+    }
+  }
+
+  @keyframes teamBlock {
+    
+  }
+  .matches__team {
+    width: 35%;
+    font-size: 0.8rem;
+  }
+
+  .team1,
+  .cap-name1 {
+    text-align: right;
+  }
+
+  
+
+  .matches__cap {
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:hover {
+      box-shadow: 0 0 7px 0 #ffffff;
+    }
+  }
+
+}

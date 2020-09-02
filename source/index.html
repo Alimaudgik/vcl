@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>ВЦЛ</title>
+
+    <meta charset="UTF-8">
+    <meta name="discription" content="любительский футбол, футбол друзей">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+    
+
+  </head>
+
+  <body class="main-page">
+    <header class="header index-header">
+      <nav class="main-nav">
+        <div class="main-nav__wrap">
+          <div class="main-nav__logo">
+            <a class="logo__link" href="index.html">
+              <img class="logo__img" src="img/logo-ball.png" alt="Лого" width="50">
+              <span>ВЦЛ 2.0</span>
+            </a>
+          </div>
+  
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link link__current">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="matches.html" class="main-nav__link">Матчи</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="stats.html" class="main-nav__link">Статистика</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Ссылка 4</a>
+            </li>
+          </ul>
+
+          <div class="main-nav__menu">
+            <button class="close">Закрыть</button>
+            <button class="open">Открыть</button>
+          </div>
+        </div>       
+      </nav>
+
+    </header>
+
+    <main>
+      <section class="present__wrap">
+        <div class="present">
+          <button type="button" class="openGames" onclick="openGames()">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 16 16">
+              <path fill="#ffffff" d="M3 9.4l5-5 5 5-1.4 1.4-3.6-3.6-3.6 3.6z"></path>
+              <path fill="#ffffff" d="M15 8c0 3.9-3.1 7-7 7s-7-3.1-7-7 3.1-7 7-7 7 3.1 7 7zM16 8c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8 8-3.6 8-8v0z"></path>
+            </svg>
+          </button>
+          
+
+
+          <div class="present__games">
+            <div class="games__button--wrap">
+              <button type="button" class="games__button btn-tournaments games__button--current">Турниры</button>
+              <button type="button" class="games__button btn-sparrings">Спарринги</button>
+            </div>
+
+            <div class="present__games--wrap tournaments">
+              <ul class="games__list">
+
+                <li class="games__item games__item--current">
+                  <div class="games__res--wrap">
+                    <ol class="games__res--list">
+                      <li class="games__res--item first">Артур</li>
+                      <li class="games__res--item second">Сергей б/в</li>
+                      <li class="games__res--item third">Арсений</li>
+                      <li class="games__res--item fourth">Молодежь</li>
+                    </ol>
+                    <p class="games__res--date">28.08.2020</p>
+                    <span class="circle"></span>                   
+                  </div>
+                  <div class="games__table--wrap">
+                    <div class="games__table--qua">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Сергей</span>
+                          <span class="res">6</span></p>
+                        <p class="lose">
+                          <span class="name">Молодежь</span>
+                          <span class="res">2</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Артур</span>
+                          <span class="res">3</span></p>
+                        <p class="lose">
+                          <span class="name">Арсений</span>
+                          <span class="res">2</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="games__table--fin">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Артур</span>
+                          <span class="res">6*</span></p>
+                        <p class="lose">
+                          <span class="name">Сергей</span>
+                          <span class="res">6</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Арсений</span>
+                          <span class="res">5</span></p>
+                        <p class="lose">
+                          <span class="name">Молодежь</span>
+                          <span class="res">2</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <span class="matches__line"></span>
+
+                  </div>
+                </li>
+
+                <li class="games__item">
+                  <div class="games__res--wrap">
+                    <ol class="games__res--list">
+                      <li class="games__res--item first">Арсений</li>
+                      <li class="games__res--item second">Артур</li>
+                      <li class="games__res--item third">Молодежь</li>
+                      <li class="games__res--item fourth">Влад Техника</li>
+                    </ol>
+                    <p class="games__res--date">25.08.2020</p>
+                    <span class="circle"></span>                   
+                  </div>
+                  <div class="games__table--wrap">
+                    <div class="games__table--qua">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Артур</span>
+                          <span class="res">5</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">0</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Арсений</span>
+                          <span class="res">4</span></p>
+                        <p class="lose">
+                          <span class="name">Молодежь</span>
+                          <span class="res">1</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="games__table--fin">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Арсений</span>
+                          <span class="res">2</span></p>
+                        <p class="lose">
+                          <span class="name">Артур</span>
+                          <span class="res">1</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Молодежь</span>
+                          <span class="res">4</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">3</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <span class="matches__line"></span>
+
+                  </div>
+                  
+                  
+                </li>
+
+                <li class="games__item">
+                  <div class="games__res--wrap">
+                    <ol class="games__res--list">
+                      <li class="games__res--item first">Женя Росицки</li>
+                      <li class="games__res--item second">Саня Техника</li>
+                      <li class="games__res--item third">Арсений</li>
+                      <li class="games__res--item fourth">Молодежь</li>
+                    </ol>
+                    <p class="games__res--date">22.08.2020</p>
+                    <span class="circle"></span>                   
+                  </div>
+                  <div class="games__table--wrap">
+                    <div class="games__table--qua">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Женя Росицки</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Молодежь</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Саня Техника</span>
+                          <span class="res">4</span></p>
+                        <p class="lose">
+                          <span class="name">Арсений</span>
+                          <span class="res">3</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="games__table--fin">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Арсений</span>
+                          <span class="res">2*</span></p>
+                        <p class="lose">
+                          <span class="name">Молодежь</span>
+                          <span class="res">2</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Женя Росицки</span>
+                          <span class="res">2*</span></p>
+                        <p class="lose">
+                          <span class="name">Саня Техника</span>
+                          <span class="res">2</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <span class="matches__line"></span>
+
+                  </div>
+                  
+                  
+                </li>
+                
+
+                <li class="games__item">
+                  <div class="games__res--wrap">
+                    <ol class="games__res--list">
+                      <li class="games__res--item first">Артур</li>
+                      <li class="games__res--item second">Влад Техника</li>
+                      <li class="games__res--item third">Арсений</li>
+                      <li class="games__res--item fourth">Саня Вынос</li>
+                    </ol>
+                    <p class="games__res--date">04.08.2020</p>
+                    <span class="circle"></span>                   
+                  </div>
+                  <div class="games__table--wrap">
+                    <div class="games__table--qua">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Артур</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Арсений</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Саня Вынос</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="games__table--fin">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Артур</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Арсений</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Саня Вынос</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <span class="matches__line"></span>
+
+                  </div>
+                  
+                  
+                </li>
+
+                <li class="games__item">
+                  <div class="games__res--wrap">
+                    <ol class="games__res--list">
+                      <li class="games__res--item first">Молодежь</li>
+                      <li class="games__res--item second">Леша Зу</li>
+                      <li class="games__res--item third">Таланов</li>
+                      <li class="games__res--item fourth">Влад Техника</li>
+                    </ol>
+                    <p class="games__res--date">31.07.2020</p>
+                    <span class="circle"></span>                   
+                  </div>
+                  <div class="games__table--wrap">
+                    <div class="games__table--qua">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Леша Зу</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Молодежь</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Таланов</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="games__table--fin">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Молодежь</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Леша Зу</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Таланов</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <span class="matches__line"></span>
+
+                  </div>
+                </li>
+
+                <li class="games__item">
+                  <div class="games__res--wrap">
+                    <ol class="games__res--list">
+                      <li class="games__res--item first">Артур</li>
+                      <li class="games__res--item second">Саня Вынос</li>
+                      <li class="games__res--item third">Арсений</li>
+                      <li class="games__res--item fourth">Влад Техника</li>
+                    </ol>
+                    <p class="games__res--date">28.07.2020</p>
+                    <span class="circle"></span>                   
+                  </div>
+                  <div class="games__table--wrap">
+                    <div class="games__table--qua">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Саня Вынос</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Арсений</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Артур</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="games__table--fin">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Артур</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Саня Вынос</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Арсений</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <span class="matches__line"></span>
+
+                  </div>
+                </li>
+
+                <li class="games__item">
+                  <div class="games__res--wrap">
+                    <ol class="games__res--list">
+                      <li class="games__res--item first">Росицки</li>
+                      <li class="games__res--item second">Арсений</li>
+                      <li class="games__res--item third">Леша Техника</li>
+                      <li class="games__res--item fourth">Влад Техника</li>
+                    </ol>
+                    <p class="games__res--date">24.07.2020</p>
+                    <span class="circle"></span>                   
+                  </div>
+                  <div class="games__table--wrap">
+                    <div class="games__table--qua">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Арсений</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Росицки</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Леша Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="games__table--fin">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Росицки</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Арсений</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Леша Техника</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                  <span class="matches__line"></span>
+
+                  </div>
+                
+
+                </li>
+
+                <!--!!!!!!!!!!!!!!!!!!-->
+
+                <li class="games__item">
+                  <div class="games__res--wrap">
+                    <ol class="games__res--list">
+                      <li class="games__res--item first">Молодежь</li>
+                      <li class="games__res--item second">Леша Зу</li>
+                      <li class="games__res--item third">Таланов</li>
+                      <li class="games__res--item fourth">Влад Техника</li>
+                    </ol>
+                    <p class="games__res--date">31.07.2020</p>
+                    <span class="circle"></span>                   
+                  </div>
+                  <div class="games__table--wrap">
+                    <div class="games__table--qua">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Леша Зу</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Молодежь</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Таланов</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="games__table--fin">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Молодежь</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Леша Зу</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Таланов</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <span class="matches__line"></span>
+
+                  </div>
+                </li>
+
+                <li class="games__item">
+                  <div class="games__res--wrap">
+                    <ol class="games__res--list">
+                      <li class="games__res--item first">Артур</li>
+                      <li class="games__res--item second">Саня Вынос</li>
+                      <li class="games__res--item third">Арсений</li>
+                      <li class="games__res--item fourth">Влад Техника</li>
+                    </ol>
+                    <p class="games__res--date">28.07.2020</p>
+                    <span class="circle"></span>                   
+                  </div>
+                  <div class="games__table--wrap">
+                    <div class="games__table--qua">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Саня Вынос</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Арсений</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Артур</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="games__table--fin">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Артур</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Саня Вынос</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Арсений</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <span class="matches__line"></span>
+
+                  </div>
+                </li>
+
+                <li class="games__item">
+                  <div class="games__res--wrap">
+                    <ol class="games__res--list">
+                      <li class="games__res--item first">Росицки</li>
+                      <li class="games__res--item second">Арсений</li>
+                      <li class="games__res--item third">Леша Техника</li>
+                      <li class="games__res--item fourth">Влад Техника</li>
+                    </ol>
+                    <p class="games__res--date">24.07.2020</p>
+                    <span class="circle"></span>                   
+                  </div>
+                  <div class="games__table--wrap">
+                    <div class="games__table--qua">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Арсений</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Росицки</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Леша Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="games__table--fin">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Росицки</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Арсений</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Леша Техника</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                  <span class="matches__line"></span>
+
+                  </div>
+                
+
+                </li>
+
+                <li class="games__item">
+                  <div class="games__res--wrap">
+                    <ol class="games__res--list">
+                      <li class="games__res--item first">Молодежь</li>
+                      <li class="games__res--item second">Леша Зу</li>
+                      <li class="games__res--item third">Таланов</li>
+                      <li class="games__res--item fourth">Влад Техника</li>
+                    </ol>
+                    <p class="games__res--date">31.07.2020</p>
+                    <span class="circle"></span>                   
+                  </div>
+                  <div class="games__table--wrap">
+                    <div class="games__table--qua">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Леша Зу</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Молодежь</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Таланов</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="games__table--fin">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Молодежь</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Леша Зу</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Таланов</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <span class="matches__line"></span>
+
+                  </div>
+                </li>
+
+                <li class="games__item">
+                  <div class="games__res--wrap">
+                    <ol class="games__res--list">
+                      <li class="games__res--item first">Артур</li>
+                      <li class="games__res--item second">Саня Вынос</li>
+                      <li class="games__res--item third">Арсений</li>
+                      <li class="games__res--item fourth">Влад Техника</li>
+                    </ol>
+                    <p class="games__res--date">28.07.2020</p>
+                    <span class="circle"></span>                   
+                  </div>
+                  <div class="games__table--wrap">
+                    <div class="games__table--qua">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Саня Вынос</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Арсений</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Артур</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="games__table--fin">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Артур</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Саня Вынос</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Арсений</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <span class="matches__line"></span>
+
+                  </div>
+                </li>
+
+                <li class="games__item">
+                  <div class="games__res--wrap">
+                    <ol class="games__res--list">
+                      <li class="games__res--item first">Росицки</li>
+                      <li class="games__res--item second">Арсений</li>
+                      <li class="games__res--item third">Леша Техника</li>
+                      <li class="games__res--item fourth">Влад Техника</li>
+                    </ol>
+                    <p class="games__res--date">24.07.2020</p>
+                    <span class="circle"></span>                   
+                  </div>
+                  <div class="games__table--wrap">
+                    <div class="games__table--qua">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Арсений</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Росицки</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Леша Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="games__table--fin">
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Росицки</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Арсений</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+
+                      <div class="games__table--matches">
+                        <p class="win">
+                          <span class="name">Леша Техника</span>
+                          <span class="res">В</span></p>
+                        <p class="lose">
+                          <span class="name">Влад Техника</span>
+                          <span class="res">П</span>
+                        </p>
+                      </div>
+                    </div>
+
+                  <span class="matches__line"></span>
+
+                  </div>
+                
+
+                </li>
+
+              </ul>
+            </div>
+            
+            <script>
+              'use strict';
+
+              let gamesItemList = document.querySelectorAll('.games__item');
+              let gamesItemCurrent;
+              let resCurrent;
+              let tableCurrent;
+              let currentMargin = 10;
+
+              for (let i = 0; i < gamesItemList.length; i++) {
+
+                gamesItemList[i].onclick = function() {
+
+                  if (!(gamesItemList[i].classList.contains('games__item--current'))) {
+                    gamesItemCurrent = document.querySelector('.games__item--current');
+                    gamesItemCurrent.classList.remove('games__item--current');
+                    gamesItemList[i].classList.add('games__item--current');
+                    
+                    resCurrent = gamesItemList[i].querySelector('.games__res--wrap');
+                    tableCurrent = gamesItemList[i].querySelector('.games__table--wrap');
+                    console.log(resCurrent.offsetTop + '-' + tableCurrent.offsetTop)
+
+                    if ( resCurrent.offsetTop + resCurrent.offsetHeight > (tableCurrent.offsetTop + currentMargin + tableCurrent.offsetHeight) ) {
+                      tableCurrent.style.top = ( (resCurrent.offsetTop + resCurrent.offsetHeight) - tableCurrent.offsetHeight ) + 'px';
+                    }
+
+                    if ( resCurrent.offsetTop < (tableCurrent.offsetTop + currentMargin) ) {
+                      tableCurrent.style.top = (resCurrent.offsetTop + currentMargin) + 'px';
+                    }
+
+                    if ( resCurrent.offsetTop >= (tableCurrent.offsetTop + currentMargin) &&
+                      resCurrent.offsetTop + resCurrent.offsetHeight <= (tableCurrent.offsetTop + currentMargin + tableCurrent.offsetHeight) ) {
+                        tableCurrent.style.top = tableCurrent.offsetTop + 'px';
+                    }
+                  }
+                }
+              }
+
+
+            </script>
+
+            <script>
+              'use strict';
+
+              let margin = 20;
+              let padding = 40;
+              let borderWidth = 2;
+
+              let itemList = document.querySelectorAll('.games__item');
+              let lineList = document.querySelectorAll('.matches__line');
+              let finalList = document.querySelectorAll('.games__table--fin');
+
+              let match1 = document.querySelector('.games__table--matches');
+              
+
+              for (let i = 0; i < itemList.length; i++) {
+                //line[i] = itemList[i].querySelector('.matches__line');
+                //match1[i] = itemList[i].querySelector('.games__table--matches');
+                //final[i] = itemList[i].querySelector('.games__table--fin');
+
+                //console.log(line)
+                lineList[i].style.left = match1.offsetWidth + padding + 'px';
+                lineList[i].style.top = padding + match1.offsetHeight/2 - borderWidth + 'px'
+                lineList[i].style.height = match1.offsetHeight + margin - borderWidth + 'px'
+
+                finalList[i].style.paddingTop = match1.offsetHeight/2 + margin/2 + 'px';
+                //line.style.left = item.offsetWidth/2 + 40 + match1.offsetWidth + 'px';
+                //line.style.top = margin + padding - borderWidth/2 + match1.offsetHeight/2 + 'px';
+                //line.style.height = match1.offsetHeight + margin - borderWidth/2 + 'px';
+
+                //final.style.marginTop = margin/2 + match1.offsetHeight/2 + 'px'
+              }
+
+
+              
+            </script>
+
+            <script>
+              'use strict';
+              
+            </script>
+
+            <div class="present__games--wrap sparrings">
+            </div>
+
+
+          </div>
+            
+        </div>
+      </section>
+
+    </main>
+
+    
+    <script>
+      'use strice';
+
+      let btnMarginSize = 15;
+      let blockSpeed = 100;
+      let blockPadding = 20;
+      let btnSpeed = blockSpeed;
+
+      let gamesBlock = document.querySelector('.present__games');
+      let originalSize = gamesBlock.offsetHeight;
+      let btnOpenGames = document.querySelector('.openGames');
+      let btnSize = btnOpenGames.offsetHeight;
+
+      let blockSize = gamesBlock.offsetHeight;
+
+      let btnMarginUp = gamesBlock.offsetTop + gamesBlock.offsetHeight + btnMarginSize;
+      btnOpenGames.style.top = btnMarginUp + 'px';
+
+      console.log(btnMarginUp);
+      console.log(blockSize);
+
+      let listItem = document.querySelectorAll('.games__item');
+      let num = listItem.length - 1;
+
+      console.log(num, gamesBlock.offsetTop + listItem[num].offsetTop + listItem[num].offsetHeight + ' - ' + (gamesBlock.offsetTop + gamesBlock.offsetHeight) );
+
+      
+
+      let openGames = function() {
+        //alert('rabotaet!');
+        
+
+        if ( gamesBlock.offsetTop + listItem[num].offsetTop + listItem[num].offsetHeight > (gamesBlock.offsetTop + gamesBlock.offsetHeight) ) {
+          blockSize = gamesBlock.offsetHeight;
+          blockSize +=blockSpeed;
+          gamesBlock.style.transition = 'height 1s ease-out';
+          gamesBlock.style.height = blockSize + 'px';
+          
+          btnMarginUp = gamesBlock.offsetTop + blockSize + btnMarginSize + btnSize;
+          
+          btnOpenGames.style.top = btnMarginUp + 'px';
+          btnOpenGames.style.transition = 'top 1s ease-out';
+
+
+          console.log(btnMarginUp)
+          console.log(blockSize)
+        }
+
+        if ( listItem[num].offsetTop + listItem[num].offsetHeight + 100 < 
+        (gamesBlock.offsetTop + blockSize) ) {
+          if ( !(btnOpenGames.classList.contains('btn--down')) ) {
+            btnOpenGames.classList.add('btn--up')
+          };
+
+          if ( btnOpenGames.classList.contains('btn--down') ) {
+            btnOpenGames.classList.remove('btn--down');
+            btnOpenGames.classList.add('btn--up')
+          };
+        }
+
+
+        if ( gamesBlock.offsetTop + listItem[num].offsetTop + listItem[num].offsetHeight < (gamesBlock.offsetTop + gamesBlock.offsetHeight) ) {
+          //blockSize +=blockSpeed;
+          //gamesBlock.style.transition = 'height 1s ease-out';
+          gamesBlock.style.height = originalSize + 'px';
+          
+          btnMarginUp = gamesBlock.offsetTop + originalSize + btnMarginSize + btnSize;
+          btnOpenGames.style.top = btnMarginUp + 'px';
+
+          let gameCurrent = gamesBlock.querySelector('.games__item--current');
+          gameCurrent.classList.remove('games__item--current');
+          listItem[0].classList.add('games__item--current');
+
+          if ( btnOpenGames.classList.contains('btn--up') ) {
+            btnOpenGames.classList.remove('btn--up');
+            btnOpenGames.classList.add('btn--down')
+          };
+
+
+          console.log(originalSize, 390)
+          console.log(btnMarginUp, 505)
+        }
+      }
+
+    </script>
+
+    <script>
+      'user strict';
+      
+
+      
+      
+    </script>
+
+    <footer>
+
+    </footer>
+    
+  </body>
+</html>

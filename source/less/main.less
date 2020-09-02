@@ -1,0 +1,393 @@
+@border-dish: 1px dashed red;
+
+@media(min-width: 1050px), (max-width: 1250px) {
+  .present__wrap {
+    background: url(../img/bg-foot.png) no-repeat center 0;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  @keyframes btnScaleDown {
+    from {transform: scaleY(1)};
+    to {transform: scaleY(-1)}
+  }
+
+  @keyframes btnScaleUp {
+    from {transform: scaleY(-1)};
+    to {transform: scaleY(1)}
+  }
+
+  .present {
+    position: relative;
+    padding: 100px 0 200px;
+    
+    background-color: rgba(0, 0, 0, 0.7);
+
+    & .openGames {
+      position: absolute;
+      left: calc(50% - 18px);
+      margin: 0;
+      padding: 0;
+      width: 36px;
+      height: 36px;
+      background: none;
+      border: none;
+      transform: scaleY(-1);
+
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(-1.2)
+      }
+      &:active {
+        transform: scale(-0.8);
+      }
+
+      &.btn--down {
+        animation: btnScaleDown 0.5s linear;
+        transform: scaleY(-1);
+
+        &:hover {
+          transform: scale(-1.2)
+        }
+        &:active {
+          transform: scale(-0.8);
+        }
+      }
+
+      &.btn--up {
+        animation: btnScaleUp 0.5s linear;
+        transform: scaleY(1);
+
+        &:hover {
+          transform: scale(1.2)
+        }
+        &:active {
+          transform: scale(0.8);
+        }
+      }
+    }
+  }
+
+  .present__games {
+    position: relative;
+    width: 800px;
+    height: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 #ffffff;
+    border-radius: 10px;
+    
+   
+    &::before {
+      content: '';
+      position: absolute;
+      left: calc(50% - 1px);
+      top: 0;
+
+      width: 2px;
+      height: 100%;
+      border-radius: 2px;
+      background-color: #ffffff;
+      z-index: 10;
+    }
+  }
+
+
+
+  .games__button--wrap {
+    display: block;
+  }
+
+  .games__button {
+    width: 24%;
+    padding: 5px 0;
+    
+    font-weight: bold;
+    text-transform: uppercase;
+    color: grey;
+    font-weight: lighter;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+      border: 1px dashed #ffffff;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.6);
+      border: 1px solid #ffffff;
+      transform: scale(0.9);
+    }
+
+    &.btn-tournaments {
+      margin-right: 1%;
+    }
+  }
+
+  .games__button--current {
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 1);
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.8);
+    }
+    
+    &:active {
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .present__games--wrap {
+    position: relative;
+    padding: 10px 0;
+
+  }
+
+  .games__list {
+    position: relative;
+
+    /*&::before {
+      content: '';
+
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+
+      width: 50%;
+      height: 100px;
+      background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent);
+
+      z-index: 20;
+    }*/
+  }
+
+  .games__item {
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 10px;
+    
+  }
+  
+  @keyframes resLink {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 90%;
+    }
+    
+  }
+
+  .games__res--wrap {
+    position: relative;
+    width: 50%;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -5px;
+      height: 1px;
+      background-color: #ffffff;
+      width: 90%;
+      animation: resLink 1s linear;
+      z-index: 21;
+    }
+
+    & .circle {
+      position: absolute;
+      top: calc(50% - 8px);
+      right: -8px;
+
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+      background-color: #000000;
+      z-index: 11;
+    }
+  }
+
+
+  .games__res--date {
+    margin-right: 20px;
+
+    font-size: 0.7rem;
+    text-align: right;
+  }
+
+  .games__res--list {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+
+  .games__res--item {
+    margin-left: 20px;
+    font-size: 0.7rem;
+
+  }
+
+
+  .games__table--wrap {
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+    display: none;
+
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+
+    font-size: 0.8rem;
+  }
+
+  .games__table--qua,
+  .games__table--fin {
+    position: relative;
+    width:40%;
+  }
+
+  .games__table--matches {
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    & span {
+      display: inline-block;
+    }
+
+    & .win,
+    & .lose {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .lose,
+  .loser {
+    color: rgb(223, 41, 41);
+  }
+
+  .games__table--qua,
+  .games__table--fin {
+    & .games__table--matches {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: -13px;
+        left: 0;
+
+        width: 100%;
+        font-size: 0.6rem;
+        text-align: center;
+
+      }
+    }
+  }
+
+  .games__table--qua .games__table--matches {
+    &:first-child::before {
+      content: 'полуфинал 1';
+    }
+
+    &:nth-child(2)::before {
+      content: 'полуфинал 2';
+    }
+  }
+
+  .games__table--fin .games__table--matches {
+    &:first-child::before {
+      content: 'финал';
+    }
+
+    &:nth-child(2)::before {
+      content: 'матч за 3 м.';
+    }
+  }
+
+  .games__table--fin {
+    margin-left: 40px;
+  }
+
+  .matches__line {
+    position: absolute;
+    width: 18px;
+    border: 2px solid #ffffff;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-left-width: 0;
+    z-index: 2;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -22px;
+      top: calc(50% - 1px);
+
+      width: 22px;
+      height: 2px;
+
+      background-color: #ffffff;
+    }
+  }
+
+
+  
+  .games__item--current {
+      background-color: #000000;
+      border-radius: 10px;
+    & .games__res--wrap  {
+      &:hover::after {
+        display: none;
+      }
+      
+      & .circle {
+        top: calc(50% - 12px);
+        right: -12px;
+  
+        width: 16px;
+        height: 16px;
+        border: 4px solid #ffffff;
+      }
+    }
+
+    & .games__table--wrap {
+      display: flex;
+      background-color: #000000;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    & .games__res--date {
+      font-size: 0.7rem;
+    }
+  
+    .games__res--item {
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+  }
+}

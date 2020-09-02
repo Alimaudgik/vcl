@@ -1,0 +1,155 @@
+@border-dish: 1px dashed red;
+
+@media(min-width: 1050px), (max-width: 1250px) {
+  .main-nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: calc(100% - 100px);
+    padding: 15px 50px;
+    border: @border-dish;
+  }
+
+  .main-nav__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  @keyframes borderTop {
+    from {
+      left: 50%;
+      width: 0;
+    }
+    to {
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  @keyframes borderLeft {
+    from {
+      top: 50%;
+      height: 0;
+    }
+    to {
+      top: 0;
+      height: 100%;
+    }
+  }
+
+  .main-nav__logo {
+    position: relative;
+    min-width: 170px;
+
+    &:hover::before,
+    &:hover::after {
+      content: '';
+      position: absolute;
+      z-index: 19;
+    }
+
+    &:hover::before {
+      top: -1px;
+      height: 100%;
+      border-top: 1px solid #ffffff;
+      border-bottom: 1px solid #ffffff;
+      animation: borderTop 0.5s linear ;
+      left: 0;
+      width: 100%;
+    }
+
+    &:hover::after {
+      left: -1px;
+      width: 100%;
+      border-left: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      animation: borderLeft 0.5s linear ;
+      top: 0;
+      height: 100%;
+
+    }
+    &:hover::before,
+    &:hover::after {
+      border-radius: 4px;
+    }
+
+  }
+
+  .logo__link {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    z-index: 20;
+
+    & .logo__img {
+      width: 50px;
+    }
+
+    & span {
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+
+
+  .main-nav__list {
+    display: flex;
+    align-items: center;
+
+    width: 50%;
+    height: 40px;
+
+    font-size: 14px;
+
+    border: @border-dish;
+  }
+
+  .main-nav__item {
+    width: 25%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .main-nav__menu {
+    display: none;
+  }
+
+  @keyframes linkHover {
+    from {box-shadow: 0 0 0 -10px #ffffff;}
+    to {
+      box-shadow: 0 5px 5px -5px #ffffff;
+    }
+  }
+  .main-nav__link {
+    display: inline-block;
+
+    padding: 0 10px 5px;
+
+    &:hover {
+      animation: linkHover 0.3s linear;
+      box-shadow: 0 5px 5px -5px #ffffff;
+      transform: scale(1.15);
+      padding: 0 10px 3px;
+
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  .link__current {
+    border-bottom: 1px solid #ffffff;
+
+    &:hover {
+      animation: none;
+      box-shadow: none;
+
+    }
+  }
+}

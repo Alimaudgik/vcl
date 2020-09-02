@@ -1,0 +1,153 @@
+@dashed: 1px dashed red;
+@pink: #da284f;
+@lightpink: #da4465;
+@darkpink: #b32645;
+
+
+body {
+  position: relative;
+  margin: 0 auto;
+
+  color: #000000;
+
+  background: url();
+  background-color: black;
+
+}
+
+*::selection {
+  background-color: @lightpink;
+  color: #ffffff;
+}
+
+p, ul, ol, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+
+  border-style: none;
+}
+
+input, textarea, button, label {
+  outline: none;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.button {
+  width: 100%;
+
+  text-transform: uppercase;
+  color: #ffffff;
+  
+  border: none;
+
+  background-color: @pink;
+
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: @lightpink;
+  }
+
+  &:active {
+    background-color: @darkpink;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.form-none {
+  width: 100%;
+  height: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+@media(min-width: 1050px), (max-width: 1250px) {
+  body {
+    max-width: 1250px;
+
+    border: 2px solid yellow;
+
+  }
+
+  
+  .section__wrapper {
+    margin: 0 auto;
+    
+    width: 85%;
+  }
+}
+
+
+@media(max-width: 1049px) {
+  body {
+    max-width: 1049px;
+    border: 2px solid blue;
+
+  }
+
+  .section__wrapper {
+    width: 90%;
+  }
+}
+
+
+@media(max-width: 767px) {
+  body {
+    min-width: 320px;
+    max-width: 767px /*321px*/;
+    border: 2px solid red;
+
+  }
+
+  .section__wrapper {
+    width: 95%;
+  }
+}
+
+
